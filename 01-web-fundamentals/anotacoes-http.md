@@ -1,22 +1,26 @@
-OQUE E GIT PULL, GIT PUSH E GIT COMMIT
-
-GIT COMMIT - Salva e registra o codigo no computador
-
-GIT PUSH - Envia o codigo para o repositório  (GitHub) É como fazer o upload para a nuvem.
-
-GIT PULL - pega o codigo do repositório para o computador, ou seja, baixa o código atualizado do repositório para o computador
 
 
+**Git e GitHub**
 
-GIT e GIT HUB - e uma ferramenta para auxiliar no trabalho.
+ **Git** é um sistema que guarda o histórico de tudo que você faz no seu projeto, ele é responsável por controlar as versões do seu projeto, ou seja, ele registra todas as mudanças que você faz nos seus arquivos ao longo do tempo.
 
-GIT - E uma ferramenta de versionamento de arquivos, ou seja ele guarda um historico completo de todas as altrracoes feitas nos arquivos, e como se cada commit fosse uma foto do projeto naquele momento
+ **GitHub** é onde você coloca esse projeto na nuvem, é uma plataforma que hospeda seus repositórios Git, deixando tudo acessível, organizado e fácil de compartilhar com outras pessoas.
 
-GIT HUB - e uma pagina onde voce cria um repositório para guardar o codigo, é possível armazenar e compartilhar projetos de desenvolvimento de software.
+**Os comandos que você mais vai usar no dia a dia:**
+
+**git init** — inicia um repositório Git na sua pasta. É o primeiro passo quando você começa um projeto do zero
+
+**git add .** — prepara todos os arquivos modificados pra serem salvos
+
+**git commit -m "mensagem"** — registra as mudanças com uma descrição do que você fez
+
+**git push** — envia tudo pro GitHub. É aqui que seu código sai da sua máquina e vai pra nuvem
+
+**git pull** — baixa as atualizações mais recentes do repositório remoto
+
+**git clone** — copia um repositório completo pra sua máquina. Muito usado quando você entra em um projeto que já existe
 
 
-ou seja, o GIT e o GIT HUB trabalham juntos para armazenar o codigo e mostrar o historico de alteracoes feitas no codigo.
 
-
-
+Git e GitHub andam juntos Git cuida do histórico e do controle de versões localmente, e o GitHub deixa tudo isso na nuvem, facilitando o trabalho
 
