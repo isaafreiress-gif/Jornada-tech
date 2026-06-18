@@ -22,5 +22,5 @@
 
 
 
-Git e GitHub andam juntos Git cuida do histórico e do controle de versões localmente, e o GitHub deixa tudo isso na nuvem, facilitando o trabalho
+Git e GitHub andam juntos Git cuida do histórico e do controle de versões localmente, e o GitHub deixa tudo isso na nuvem, facilitando o trabalho.
 
