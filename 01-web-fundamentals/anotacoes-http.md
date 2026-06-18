@@ -8,8 +8,12 @@ GIT PULL - pega o codigo do repositório para o computador, ou seja, baixa o có
 
 
 
-GIT e GIT HUB - e uma ferramenta para auxiliar no trabalho. GIT - E uma ferramenta de versionamento de arquivos, ou seja ele guarda um historico completo de todas as altrracoes feitas nos arquivos, e como se cada commit fosse uma foto do projeto naquele momento
-GIT HUB - e uma pagina onde voce cria um repositório para guardar o codigo, armazena e visualiza as coisas 
+GIT e GIT HUB - e uma ferramenta para auxiliar no trabalho.
+
+GIT - E uma ferramenta de versionamento de arquivos, ou seja ele guarda um historico completo de todas as altrracoes feitas nos arquivos, e como se cada commit fosse uma foto do projeto naquele momento
+
+GIT HUB - e uma pagina onde voce cria um repositório para guardar o codigo, é possível armazenar e compartilhar projetos de desenvolvimento de software.
+
 
 ou seja, o GIT e o GIT HUB trabalham juntos para armazenar o codigo e mostrar o historico de alteracoes feitas no codigo.
 
