@@ -2,7 +2,11 @@
   
 **OQUE E UMA API?** E uma interface que permite a comunicação entre duas aplicações diferentes
 e é um conjunto de regras e protocolos que permite que diferentes softwares conversem entre si.
-Comunicação cliente e o servidor 
+O front end se comunica com o back end atraves de uma API que consulta dados,(EXEMPLO O RESTAURANTE) ou seja a comunicacao que existe do front pro back e atraves da API.
+
+
+**DIFERENÇA ENTRE API REST E A API RESTFULL**  API REST e um estilo de arquitetura, ele define regras de como uma API deve se comportar. E a API RESTFULL e uma API que utiliza todas as regras de arquitetura REST
+
 
 a comunicação no modelo tradicional funciona da seguinte maneira: o cliente faz uma requisição, o servidor recebe a requisição se for um arquivo estatico (como imagens, html, js) ele envia a requsição devolta ao cliente, se for um arquivo dinamico (dados, documentos, etc) o servidor faz uma consulta no banco de dados, a consulta vai montar um html e vai voltar ao cliente.
 **ou seja, o cliente sempre vai pedir uma requisição e o servidor sempre vai enviar uma resposta**
@@ -44,8 +48,6 @@ Criar ou utilizar de forma restrita o que o HTTP fornece por exemplo:
 - Padrão para URLs (rotas) etc 
 
 **RESTful API** e uma API REST que abrange todos os 4 niveis de conformidde com a arquitetura REST ou seja, preciso obdecer 4 niveis de ganhos de especificaçoes rest 
-
-**UMA API REST E SEMPRE RESTful?** Não, nem toda API REST é uma API "FULL" (frequentemente chamada de RESTful ou por seus níveis mais altos de maturidade, como o modelo de maturidade de Richardson).Para ser considerada "FULL", a API deve seguir rigorosamente todos os 6 princípios de arquitetura REST, indo muito além do básico.
 
 **TESTAR API** postman ou Insomnia.
 
