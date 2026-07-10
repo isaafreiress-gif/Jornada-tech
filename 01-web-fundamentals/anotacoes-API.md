@@ -1,5 +1,7 @@
 **API (Application program interface/ Interface de programação de aplicações)**
-  
+
+![diagramaapi.drawio.svg](../../../../Downloads/diagramaapi.drawio.svg)
+
 **OQUE E UMA API?** E uma interface que permite a comunicação entre duas aplicações diferentes
 e é um conjunto de regras e protocolos que permite que diferentes softwares conversem entre si.
 O front end se comunica com o back end atraves de uma API que consulta dados,(EXEMPLO O RESTAURANTE) ou seja a comunicacao que existe do front pro back e atraves da API.
