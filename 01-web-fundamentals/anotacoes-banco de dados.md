@@ -1,0 +1,69 @@
+# **BANCO DE DADOS**
+
+![TiposPrimitivos.png](img/TiposPrimitivos.png)
+
+### Numerico
+
+#### **inteiro ->**
+
+        tinyint -> Guarda numeros pequenos, de -128 a 127 ou 0 a 255. Ocupa 1 byte.     
+        smallint -> guarda numeros um pouco maiores, de -32.768 a 32.767 ou 0 a 65.535. Ocupa 2 bytes.
+        mediumint -> usado quando os numeros sao grandes, de -8.388.608 a 8.388.607 ou 0 a 16.777.215. Ocupa 3 bytes.
+        int -> guarda apenas numeros inteiros de -2.147.483.648 a 2.147.483.647 (ou de 0 a 4.294.967.295 se for UNSIGNED ). Ocupa 4 bytes.      
+        bigint -> guarda numeros muito grandes, de -9.223.372.036.854.775.808 a 9.223.372.036.854.775.807 ou 0 a 18.446.744.073.709.551.615. Ocupa 8 bytes.
+
+#### **Real ->**
+    
+        float -> guarda numeros reais uso recomendado para Altura, peso, temperatura e dados de sensores. 
+        double -> guarda numeros reais, usado para muitas casa decimais uso recomendado para Coordenadas científicas, mapas ou cálculos complexos. 
+        decimal -> guarda numeros reais uo recomendado Dinheiro, salários, preços e finanças..
+
+#### **Logico ->**
+
+        boolean -> guarda valores booleanos, verdadeiro ou falso. 
+
+### Data/tempo
+
+        date -> guarda apenas datas 
+        datetime -> guarda data e hora 
+        timestamp -> guarda data e hora ele preenche e atualiza sozinho, sem que você precise enviar a data e a hora novamente
+        time -> guarda apenas a hora 
+        year -> guarda apenas o ano 
+
+### Literal
+
+#### **Caractere ->**
+
+        char -> Tamanho fixo, ou seja, sempre reserva a mesma quantidade de espaço, mesmo que o texto seja menor.
+        se o dado tem o mesmo tamanho, usar char
+        varchar -> tamano variável, ou seja, guarda apenas o espaço necessário para o texto
+        se o dado pode ter tamanhos diferentes, usar varchar
+
+
+**INTEIRO:** Valores numéricos negativo ou positivo,ou seja, valores inteiros
+**REAL:** valores numéricos negativo ou positivo com casa decimal, ou seja, valores reais
+**LÓGICO:** Representa valores booleanos, VERDADEIRO ou FALSO. Pode ser representado apenas um bit
+**TEXTO:** sequencia de um ou mais de caracteres, colocamos os valores do tipo TEXTO
+
+
+**CREATE TABLE** -> Criar a tabela.     
+**ALTER TABLE** -> modificar estrutura  
+**INSERT** -> adicionar novos registros a uma tabela    
+**SELECT** -> é usado para recuperar dados de uma tabela em um banco de dados
+**UPDATE** -> modifica registros existentes em uma tabela
+**DELETE** -> usado para remover registros de uma tabela
+
+**describe (nome da tabela)** -> usado para exibir a estrutura  nomes das colunas, tipos de dados e restrições.     
+**drop database (nome do banco)** -> usado para excluir um banco de dados existente
+
+**DEFAULT CHARACTER SET utf8mb4** -> Define o "alfabeto padrao" garante que o sistema entenda e armazene letras com acentos,e tambem caracteres de outros idiomas              
+**COLLATE utf8mb4_general_ci** -> garante que o sistema compare letras com acentos e sem acentos ou maiusculas e minusculas como iguais, por exemplo, se o usuario digitar João ou joao, o sistema vai entender que é a mesma coisa e encontrar mesmo se digitado tudo maiusculo e sem acento.
+
+                        
+#### INSERIR DADOS NA TABELA 
+**INSERT INTO** -> diz que você quer inserir dados na tabela    
+**VALUES** -> Valores que serão inseridos
+
+**Exemplo:**        
+        **INSERT INTO** clientes (nome, cpf, email)        
+        **VALUES** ('João', '12345678910', 'joao@gmail.com');
