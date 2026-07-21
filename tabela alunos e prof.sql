@@ -13,13 +13,13 @@ CREATE TABLE alunos (
     matricula VARCHAR(20) NOT NULL UNIQUE,
     email VARCHAR(100) UNIQUE,
     telefone VARCHAR(15),
-    endereco_res VARCHAR(200),
+    endereco VARCHAR(200),
     data_matricula DATE NOT NULL,
     curso VARCHAR(50) NOT NULL,
     status_aluno VARCHAR(20) NOT NULL,
+    id_professor INT,
     PRIMARY KEY (id_aluno)
 ) DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
-
 
 CREATE TABLE professores (
 	id_professor INT NOT NULL AUTO_INCREMENT,
@@ -31,6 +31,11 @@ CREATE TABLE professores (
     PRIMARY KEY (id_professor)
 ) DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
 
-
-
+CREATE TABLE turmas (
+    id_turma INT AUTO_INCREMENT PRIMARY KEY,
+    id_professor INT NOT NULL,
+    id_aluno INT NOT NULL,
+    FOREIGN KEY (id_professor) REFERENCES professores(id_professor),
+    FOREIGN KEY (id_aluno) REFERENCES alunos(id_aluno)
+);
 
