@@ -67,3 +67,16 @@
 **Exemplo:**        
         **INSERT INTO** clientes (nome, cpf, email)        
         **VALUES** ('João', '12345678910', 'joao@gmail.com');
+
+
+### CHAVE PRIMARIA (PRIMARY KEY)
+
+A chave primária é o identificador unico de cada registro em uma tabela, por exemplo cpf, telefone, nao existe duas pessoas com o mesmo cpf ou telefone
+
+### CHAVE ESTRANGEIRA (FOREIGN KEY)
+A chave estrangeira é um campo que cria um relacionamento entre duas tabelas, ela aponta para a chave primária de outra tabela
+
+
+### **RELACIONAMENTO ENTRE TABELAS**
+
+![diagrama relacionamento.drawio.svg](img/diagrama%20relacionamento.drawio.svg)
