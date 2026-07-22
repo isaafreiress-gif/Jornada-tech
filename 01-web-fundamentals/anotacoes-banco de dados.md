@@ -59,14 +59,39 @@
 **DEFAULT CHARACTER SET utf8mb4** -> Define o "alfabeto padrao" garante que o sistema entenda e armazene letras com acentos,e tambem caracteres de outros idiomas              
 **COLLATE utf8mb4_general_ci** -> garante que o sistema compare letras com acentos e sem acentos ou maiusculas e minusculas como iguais, por exemplo, se o usuario digitar João ou joao, o sistema vai entender que é a mesma coisa e encontrar mesmo se digitado tudo maiusculo e sem acento.
 
-                        
-#### INSERIR DADOS NA TABELA 
+##  COMANDOS CRUD                 
+
+### Insere novos registros em uma tabela
+
 **INSERT INTO** -> diz que você quer inserir dados na tabela    
 **VALUES** -> Valores que serão inseridos
 
 **Exemplo:**        
         **INSERT INTO** clientes (nome, cpf, email)        
         **VALUES** ('João', '12345678910', 'joao@gmail.com');
+
+### UPDATE
+Altera os dados existentes de uma linhas na tabela
+
+update (nome da tabela)         
+set (qual coluna deve ser alterada)  =  'nova alteracao'        
+ where (linha que deve ser alterada) 
+
+**ex:**     
+update alunos   
+set email = 'isafreiress@gmail.com'     
+where id_aluno = 1
+
+### DELETE
+Remove registros de uma tabela
+
+delete from (nome da tabela)   
+where (onde deve ser deletado)  
+
+**ex:**      
+delete from alunos          
+where id_aluno = 6
+
 
 
 ### CHAVE PRIMARIA (PRIMARY KEY)
@@ -80,3 +105,13 @@ A chave estrangeira é um campo que cria um relacionamento entre duas tabelas, e
 ### **RELACIONAMENTO ENTRE TABELAS**
 
 ![diagrama relacionamento.drawio.svg](img/diagrama%20relacionamento.drawio.svg)
+
+
+
+### Diferença inner join, Left join e right join
+
+**INNER JOIN** -> O inner join e usado para juntar duas ou mais tabelas,mostrando apenas os registros que possuem correspondência entre elas ou seja, ele so mostra os dados que existem nas duas tabelas ao mesmo  tempo, se um registro existe em uma tabela mas nao existe na outra ele nao vai aparecer no resultado da consulta     
+
+**LEFT JOIN** -> O left join junta duas ou mais tabelas, mostrando todos os registros da tabela da esquerda e apenas os registros que possuem correspondência na tabela da direita, ou seja, ele mostra todos os registros da tabela da esquerda e apenas os registros que existem na tabela da direita, quando nao existe correspondencia, os valores da tabela da direita aparecem como NULL
+
+**RIGHT JOIN** -> O right join junta duas ou mais tabelas, mostrando todos os registros da tabela da direita e apenas os registros que combinam na tabela da esquerda, ou seja, ele mostra todos os registros da tabela da direita e apenas os registros que existem na tabela da esquerda, quando nao existe correspondencia, os valores da tabela da esquerda aparecem como NULL          
