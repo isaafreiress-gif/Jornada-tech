@@ -115,3 +115,37 @@ A chave estrangeira é um campo que cria um relacionamento entre duas tabelas, e
 **LEFT JOIN** -> O left join junta duas ou mais tabelas, mostrando todos os registros da tabela da esquerda e apenas os registros que possuem correspondência na tabela da direita, ou seja, ele mostra todos os registros da tabela da esquerda e apenas os registros que existem na tabela da direita, quando nao existe correspondencia, os valores da tabela da direita aparecem como NULL
 
 **RIGHT JOIN** -> O right join junta duas ou mais tabelas, mostrando todos os registros da tabela da direita e apenas os registros que combinam na tabela da esquerda, ou seja, ele mostra todos os registros da tabela da direita e apenas os registros que existem na tabela da esquerda, quando nao existe correspondencia, os valores da tabela da esquerda aparecem como NULL          
+
+
+### **COMANDO JOIN**
+
+SELECT (colunas) 
+FROM (tabela principal) 
+JOIN (outra tabela)
+ON (condição)
+
+**ex:** SELECT
+    a.nome_completo AS Aluno,
+    p.nome AS professor
+FROM turmas t
+INNER JOIN alunos a
+ON t.id_aluno = a.id_aluno
+INNER JOIN professores p
+ON t.id_professor = p.id_professor      
+
+#### EXPLICACAO LINHA POR LINHA
+SELECT -> Inicia a consulta e informa os dados que serao exibidos
+a.nome_completo AS Aluno -> Mostra a coluna nome_completo da tabela alunos (a) e exibe o titulo da coluna como aluno
+p.nome AS professor -> Mostra a coluna nome da tabela professores (p) e exibe titulo da coluna como professor
+FROM turmas t -> Define a tabela principal como turmas 
+INNER JOIN alunos a -> Junta a tabela alunos com a tabela turmas
+ON t.id_aluno = a.id_aluno -> Define a condição que o id_aluno da tabela turmas deve ser igual ao id_aluno da tabela alunos
+INNER JOIN professores p -> Junta a tabela professores na consulta
+ON t.id_professor = p.id_professor -> Define a condição que o id_professor da tabela turmas deve ser igual da tabela professores
+
+
+**RESUMINDO**
+SELECT -> Oque sera mostrado
+FROM -> Define a tabela principal
+INNER -> junta com outra tabela
+ON -> Define a condição de relacionamento entre as tabelas de como elas serao ligadas
