@@ -2,9 +2,9 @@
 
 ![diagramaapi.drawio.svg](img/diagramaapi.drawio.svg)
 
-**OQUE E UMA API?** E uma interface que permite a comunicação entre duas aplicações diferentes
+****OQUE E UMA API?** E uma interface que permite a comunicação entre duas aplicações diferentes
 e é um conjunto de regras e protocolos que permite que diferentes softwares conversem entre si.
-O front end se comunica com o back end atraves de uma API que consulta dados,(EXEMPLO O RESTAURANTE) ou seja a comunicacao que existe do front pro back e atraves da API.
+O front end se comunica com o back end atraves de uma API que consulta dados,(EXEMPLO O RESTAURANTE) ou seja a comunicacao que existe do front pro back e atraves da API.**
 
 
 **DIFERENÇA ENTRE API REST E A API RESTFULL**  API REST e um estilo de arquitetura, ele define regras de como uma API deve se comportar. E a API RESTFULL e uma API que utiliza todas as regras de arquitetura REST

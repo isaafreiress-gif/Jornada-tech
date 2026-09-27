@@ -108,6 +108,7 @@ A chave estrangeira é um campo que cria um relacionamento entre duas tabelas, e
 
 
 
+
 ### Diferença inner join, Left join e right join
 
 **INNER JOIN** -> O inner join e usado para juntar duas ou mais tabelas,mostrando apenas os registros que possuem correspondência entre elas ou seja, ele so mostra os dados que existem nas duas tabelas ao mesmo  tempo, se um registro existe em uma tabela mas nao existe na outra ele nao vai aparecer no resultado da consulta     
